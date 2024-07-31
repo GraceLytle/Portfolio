@@ -1,0 +1,42 @@
+/*===== Footer css =====*/
+
+footer {
+	background: #f9f9f9;
+	.br-footer-detail {
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #777;
+		a {
+			@include ease3;
+			color: $sec-bg;
+			&:hover {
+				color: $main-primary-color;
+			}
+		}
+		.br-social {
+			ul{
+				margin: 0;
+				padding: 0;
+				display: flex;
+				li {
+					margin-left: 5px;
+					a{
+						width: 30px;
+						height: 30px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: $sec-bg;
+						color: #fff;
+						border-radius: 30px;
+						&:hover {
+							background: $main-primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
