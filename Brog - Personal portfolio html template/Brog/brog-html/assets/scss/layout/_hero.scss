@@ -90,7 +90,8 @@
 				img {
 					@include ease3;
 					width: 100%;
-					filter: grayscale(100%);
+					filter: grayscale(65%);
+					//filter: grayscale(100%);
 				}
 				&:hover {
 					box-shadow: 0 0 22px 0 rgba(0, 0, 0, .5);

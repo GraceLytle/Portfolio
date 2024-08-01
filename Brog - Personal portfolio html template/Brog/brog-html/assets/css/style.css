@@ -260,6 +260,10 @@ p {
   }
 }
 /**  Section spacing  **/
+.margin-t-neg-100 {
+  margin-top: -100px;
+}
+
 .margin-t-80 {
   margin-top: 50px;
 }
@@ -452,7 +456,7 @@ header nav a:hover, header nav button:hover {
 .br-hero .hero-content .br-hero-img .br-card img {
   transition: all 0.3s ease-in-out;
   width: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(65%);
 }
 .br-hero .hero-content .br-hero-img .br-card:hover {
   box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.5);
