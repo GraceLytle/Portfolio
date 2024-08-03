@@ -85,16 +85,19 @@ li.mixitup-control-active {
   }
   .portfolio-img {
     @include ease3;
-    width: 200px;
+    //width: 200px;
+    width: 300px;
     overflow: hidden;
     border-radius: 15px;
     position: relative;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .09);
     a {
+      min-height: 200px; //Added this
       background-attachment: fixed;
       height: 100%;
       width: 100%;
-      background-size: 200px;
+      // background-size: 200px;
+      background-size: 300px;
       background-position: center;
       background-attachment: inherit;
       background-repeat: no-repeat;
@@ -111,13 +114,21 @@ li.mixitup-control-active {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .5);
+        // background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .05);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 40px;
+        //align-items: center;
+        align-items: flex-start;
+        // justify-content: center;
+        justify-content: left;
+        // font-size: 40px;
+        font-size: 30px;
         color: #fff;
         opacity: 0;
+        .plus-sign {
+          margin-left: 20px;
+          margin-top: 5px;
+        }
     }
   }
   &:hover {

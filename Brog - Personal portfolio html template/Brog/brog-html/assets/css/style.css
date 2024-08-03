@@ -376,7 +376,7 @@ header nav a:hover, header nav button:hover {
   position: absolute;
   top: 50px;
   left: 0;
-  color: #f9f9f9;
+  color: #efefef;
   font-size: 12vw;
   font-weight: 900;
   z-index: -1;
@@ -385,7 +385,7 @@ header nav a:hover, header nav button:hover {
   position: absolute;
   bottom: 50px;
   right: 0;
-  color: #f9f9f9;
+  color: #efefef;
   font-size: 12vw;
   font-weight: 900;
   z-index: -1;
@@ -1150,17 +1150,18 @@ li.mixitup-control-active {
 }
 .br-project-box .portfolio-img {
   transition: all 0.3s ease-in-out;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
   border-radius: 15px;
   position: relative;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
 }
 .br-project-box .portfolio-img a {
+  min-height: 200px;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  background-size: 200px;
+  background-size: 300px;
   background-position: center;
   background-attachment: inherit;
   background-repeat: no-repeat;
@@ -1177,13 +1178,17 @@ li.mixitup-control-active {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 30px;
   color: #fff;
   opacity: 0;
+}
+.br-project-box .portfolio-img .overlay .plus-sign {
+  margin-left: 20px;
+  margin-top: 5px;
 }
 .br-project-box:hover .portfolio-img {
   box-shadow: none;

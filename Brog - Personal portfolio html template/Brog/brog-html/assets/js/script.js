@@ -54,6 +54,25 @@
     var portfolioContent = $('.portfolio-content');
     portfolioContent.mixItUp();
 
+    document.querySelectorAll('.br-project-box').forEach(box => {
+        const item = box.querySelector('.portfolio-img a');
+        const staticImage = item.getAttribute('data-static');
+        const animatedImage = item.getAttribute('data-animated');
+    
+        // Set initial background image to the static image
+        item.style.backgroundImage = `url(${staticImage})`;
+    
+        // Event listener for hover to display the GIF
+        box.addEventListener('mouseenter', event => {
+            item.style.backgroundImage = `url(${animatedImage})`;
+        });
+    
+        // Event listener to revert to static image on mouse leave
+        box.addEventListener('mouseleave', event => {
+            item.style.backgroundImage = `url(${staticImage})`;
+        });
+    });
+
     /*--------------------- Replace all SVG images with inline SVG -------------------------------- */
     $(document).ready(function () {
         $('img.svg_img[src$=".svg"]').each(function () {
@@ -201,7 +220,7 @@
         ]
     });
 
-    /*----------------------------- Client Slider -------------------------------- */    
+    /*----------------------------- Client Slider -------------------------------- */
     $('#br-client-slider').slick({
         rows: 1,
         dots: false,
@@ -211,28 +230,28 @@
         slidesToShow: 6,
         slidesToScroll: 1,
         responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                dots: false
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 575,
-            settings: {
-                slidesToScroll: 1,
-                slidesToShow: 2,
-            }
-        }
         ]
     });
 
@@ -282,18 +301,18 @@
                 .end().filter("[href='#" + id + "']").parent().addClass("active");
         }
     });
-      /* For Directly Run */
-  $(window).on("load", function () {
-    setTimeout(function () {
-      switch (window.location.protocol) {
-        case 'file:':
-          console.log(
-            '%c Please try to run using local server instead of Directly click or run for better experience. ',
-            'font-size: 20px; background-color: black; color:white; margin-left: 15px; padding: 15px'
-          );
-          break;
-        default:
-      }
-    }, 100);
-  });
+    /* For Directly Run */
+    $(window).on("load", function () {
+        setTimeout(function () {
+            switch (window.location.protocol) {
+                case 'file:':
+                    console.log(
+                        '%c Please try to run using local server instead of Directly click or run for better experience. ',
+                        'font-size: 20px; background-color: black; color:white; margin-left: 15px; padding: 15px'
+                    );
+                    break;
+                default:
+            }
+        }, 100);
+    });
 })(jQuery);
