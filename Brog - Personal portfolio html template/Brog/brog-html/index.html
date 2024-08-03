@@ -47,7 +47,15 @@
     <header>
         <nav>
             <button class="br-sidebar-toggle">
-                <img src="assets/img/icons/menu.svg" class="svg_img" alt="menu">
+                <div class="svg-container">
+                    <svg viewBox="0 0 100 60" width="40" height="40">
+                      <rect x="10" width="80" height="10" rx="5" ry="5" fill="#8c6fff"></rect>
+                      <rect x="10" y="25" width="80" height="10" rx="5" ry="5" fill="#8c6fff"></rect>
+                      <rect x="10" y="50" width="80" height="10" rx="5" ry="5" fill="#8c6fff"></rect>
+                    </svg>
+                  </div>
+                <!-- Original Image -->
+                  <!-- <img src="assets/img/icons/menu.svg" class="svg_img" alt="menu"> -->
             </button>
         </nav>
     </header>
@@ -105,20 +113,20 @@
                         </div>
                     </div>
                     <div class="br-hero-name">
-                        <h3>I am committed to <br><span>Cybersecurity</span></h3>
+                        <h3>Committed to <br><span>Cybersecurity</span></h3>
                     </div>
                 </div>
                 <div class="art"></div>
             </div>
         </div>
-        <!-- <div class="scroll-next" data-scroll="about">
+        <div class="scroll-next" data-scroll="about">
             <div class="br-container">
                 <span class="menu">
                     <span class="text"></span>
                     <span class="circle"></span>
                 </span>
             </div>
-        </div> -->
+        </div>
     </section>
     <!-- Hero End -->
 
@@ -131,10 +139,8 @@
                     <span class="ligh-title">About</span>
                 </div>
                 <div class="col-lg-6">
-                    <div class="m-b-991 ">
-                        <div class="row m-b-minus-30px">
-                            <img src="assets/img/hero/GraceLytle.jpg" alt="Grace Lytle">
-                        </div>
+                    <div class="m-b-991 about-image-container">
+                        <img src="assets/img/hero/GraceLytle.jpg" alt="Grace Lytle" class="about-image" >
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -443,7 +449,8 @@
                                                             data-static="assets/img/portfolio/Goose.png"
                                                             href="assets/img/portfolio/JMB1885x950.gif"
                                                             style="background-image: url(assets/img/portfolio/Goose.png)">
-                                                            <span class="overlay">+</span>
+                                                            <span class="overlay"><span
+                                                                class="plus-sign">+</span></span>
                                                         </a>
                                                     </div>
                                                     <div class="br-detail">
@@ -472,7 +479,8 @@
                                                             data-static="assets/img/portfolio/Goose.png"
                                                             href="assets/img/portfolio/Goose1885x950.gif"
                                                             style="background-image: url(assets/img/portfolio/Goose.png)">
-                                                            <span class="overlay">+</span>
+                                                            <span class="overlay"><span
+                                                                class="plus-sign">+</span></span>
                                                         </a>
                                                     </div>
                                                     <div class="br-detail">
@@ -556,10 +564,6 @@
                 </div>
                 <div class="br-social">
                     <ul>
-                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
-                                    aria-hidden="true"></i></a></li>
                         <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
                                     aria-hidden="true"></i></a></li>
                         <li><a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"

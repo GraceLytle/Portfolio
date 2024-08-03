@@ -431,7 +431,7 @@ header nav a:hover, header nav button:hover {
   font-weight: 400;
 }
 .br-hero .hero-content .br-hero-img {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 30px;
   position: relative;
 }
@@ -616,6 +616,35 @@ header nav a:hover, header nav button:hover {
   font-family: "Poppins, sans-serif";
   font-weight: 400;
   line-height: 28px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.about-image-container {
+  width: 95%;
+  height: 100%;
+  margin: 0 20px;
+  position: relative;
+}
+.about-image-container:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: 1px solid #8c6fff;
+  border-radius: 15px;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 .br-about-info {

@@ -1,7 +1,10 @@
 /* Responsive css */
 @media only screen and (max-width: 1399px) {
   .br-hero .hero-content .br-hero-img {
-    max-width: 300px;
+    max-width: 400px;
+  }
+  .br-hero .hero-content .br-hero-img:before {
+    height: 95%;
   }
   .br-hero .hero-content .br-hero-detail .br-hero-title {
     font-size: 48px;
@@ -9,6 +12,20 @@
   .br-hero .hero-content .br-hero-name h3 {
     font-size: 36px;
     line-height: 42px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .br-hero .hero-content .br-hero-img {
+    order: -1;
+  }
+  .br-hero .hero-content .br-hero-img:before {
+    height: 100%;
+  }
+  .br-hero .hero-content .br-hero-detail .br-hero-title {
+    order: 1;
+  }
+  .br-hero .hero-content .br-hero-name h3 {
+    order: 0;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -26,6 +43,9 @@
   }
   .br-hero .hero-content .br-hero-img {
     max-width: 280px;
+  }
+  .br-hero .hero-content .br-hero-img:before {
+    height: 65%;
   }
   .br-hero .hero-content .br-hero-detail .br-hero-title {
     font-size: 45px;
@@ -126,6 +146,9 @@
     max-width: 100%;
     margin: 50px 0 30px 0;
   }
+  .br-hero .hero-content .br-hero-img:before {
+    height: 100%;
+  }
   .br-hero .hero-content .br-hero-name {
     min-width: 100%;
   }
@@ -150,7 +173,7 @@
     font-size: 14px;
   }
   .br-hero .hero-content .br-hero-detail .br-hero-title {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0px;
     font-size: 33px;
     line-height: 47px;
   }
