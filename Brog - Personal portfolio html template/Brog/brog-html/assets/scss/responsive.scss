@@ -5,15 +5,18 @@
             .br-hero-img {
                 max-width: 400px;
             }
-            .br-hero-img:before{
+
+            .br-hero-img:before {
                 height: 95%;
             }
+
             .br-hero-detail {
                 .br-hero-title {
                     font-size: 48px;
 
                 }
             }
+
             .br-hero-name {
                 h3 {
                     font-size: 36px;
@@ -24,83 +27,143 @@
         }
     }
 }
+
 @media only screen and (max-width: 991px) {
     .br-hero {
         .hero-content {
             .br-hero-img {
-                order: -1;
+                order: 0;
             }
-            .br-hero-img:before{
+
+            .br-hero-img:before {
                 height: 100%;
             }
-            .br-hero-detail {
-                .br-hero-title {
-                    order:1;
-                }
-            }
+
             .br-hero-name {
-                h3 {
-                    order:0;
-                }
+                order: -1;
+            }
+
+            .br-hero-detail {
+                order: 1;
+            }
+
+            .br-text-2 {
+                display: none; // Makes the .br-text-2 tag invisible
             }
         }
     }
+
+    .br-about-detail {
+        margin-top:25px;
+    }
+
+    .about-image-container {
+        width: 100%;
+        height: 100%;
+        margin: 0 0px;
+        position: relative;
+        padding: 10px;
+    }
+
+    .about-image-container:before {
+        content: "";
+        width: 97%;
+        height: 97%;
+    }
+
+    .br-contact {
+        .br-box {
+            flex-direction: column;  
+            padding: 15px; 
+            
+            .col-lg-6 {
+                width: 100%; 
+                margin-bottom: 20px; 
+            }
+            
+            .detail {
+                flex-direction: column; 
+                align-items: flex-start;
+                text-align: left;
+            }
+            
+            .icon {
+                margin-bottom: 15px;  // Add some spacing between the icon and the info
+            }
+        }
+    }
+
+
 }
+
 @media only screen and (max-width: 1199px) {
     .padding-tb-80 {
         padding: 50px 0;
     }
+
     .margin-t-80 {
         margin-top: 50px;
     }
+
     .margin-b-50 {
         margin-bottom: 20px;
     }
+
     p {
         font-size: 14px;
     }
+
     .br-hero {
         .hero-content {
             .br-hero-img {
                 max-width: 280px;
             }
-            .br-hero-img:before{
+
+            .br-hero-img:before {
                 height: 65%;
             }
+
             .br-hero-detail {
                 .br-hero-title {
                     font-size: 45px;
                 }
             }
+
             .br-hero-name {
                 h3 {
                     font-size: 34px;
                     line-height: 40px;
                 }
             }
+
             .art {
                 right: 270px;
             }
         }
     }
+
     .section-title {
         h2 {
             padding: 33px 0;
             font-size: 34px;
         }
+
         .ligh-title {
             font-size: 90px;
         }
     }
+
     .br-about {
         .br-box {
             &:after {
                 right: -53%;
             }
+
             &:before {
                 top: -40%;
                 right: -24%;
             }
+
             &:hover {
                 &:after {
                     right: -52%;
@@ -108,15 +171,18 @@
             }
         }
     }
+
     .br-about-detail {
         h4 {
             font-size: 19px;
         }
+
         .br-text {
             font-size: 14px;
             line-height: 26px;
         }
     }
+
     .br-about-info {
         ul {
             li {
@@ -126,6 +192,7 @@
             }
         }
     }
+
     .box-front {
         .content-wrap {
             h3 {
@@ -133,25 +200,30 @@
             }
         }
     }
+
     .education,
     .experiense {
         h4 {
             font-size: 21px;
         }
     }
+
     .timeline-content {
         .timeline-title {
             font-size: 16px;
         }
     }
+
     .br-project-box {
         h3 {
             font-size: 19px;
         }
+
         .portfolio-img {
             width: 130px;
         }
     }
+
     .achive {
         .count-block {
             h3 {
@@ -160,6 +232,7 @@
             }
         }
     }
+
     .br-news {
         .news-info {
             .detail {
@@ -172,15 +245,18 @@
             }
         }
     }
+
     .br-contact {
         .br-box {
             &:before {
                 top: -84%;
                 right: -10%;
             }
+
             &:after {
                 right: -30%;
             }
+
             &:hover {
                 &:after {
                     right: -25%;
@@ -189,43 +265,59 @@
         }
     }
 }
+
 @media only screen and (max-width: 991px) {
     .m-b-991 {
         margin-bottom: 50px;
     }
+
     .m-b-991-20 {
         margin-bottom: 20px;
     }
+
     .section-title {
         h2 {
             margin-bottom: 30px;
             font-size: 32px;
         }
     }
+
     .br-hero.margin-b-50 {
         margin: 0;
     }
+
     .br-hero {
         height: 100%;
+
+        .br-text-1 {
+            top: 25px;
+        }
+
         .hero-content {
             margin: 50px 0;
             align-items: center;
+
             .br-hero-img {
                 max-width: 100%;
                 margin: 50px 0 30px 0;
             }
-            .br-hero-img:before{
+
+            .br-hero-img:before {
                 height: 100%;
             }
+
             .br-hero-name {
                 min-width: 100%;
+
                 h3 {
                     font-size: 28px;
+
                     span {
                         max-width: 100%;
                     }
                 }
             }
+
             .hero-item {
                 max-width: 500px;
                 padding: 0;
@@ -233,19 +325,24 @@
                 align-items: center;
                 justify-content: center;
             }
+
             .br-hero-detail {
                 max-width: 400px;
+
                 .br-hero-detail {
                     text-align: left;
                     font-size: 14px;
                 }
+
                 .br-hero-title {
                     margin: 0 0 10px 0px;
                     font-size: 33px;
                     line-height: 47px;
+
                     span {
                         max-width: 100%;
                         display: flex;
+
                         br {
                             display: none;
                         }
@@ -254,27 +351,32 @@
             }
         }
     }
+
     .scroll-next {
         display: none;
     }
+
     .br-about {
-        .br-box{
+        .br-box {
             &:after {
                 right: -36%;
             }
+
             &:hover {
                 &:after {
                     right: -32%;
-                } 
+                }
             }
         }
     }
+
     .education,
     .experiense {
         h4 {
             font-size: 20px;
         }
     }
+
     .box-front {
         .content-wrap {
             h3 {
@@ -282,16 +384,19 @@
             }
         }
     }
+
     .br-project-box {
         h3 {
             font-size: 18px;
         }
     }
+
     .br-project-box {
         .portfolio-img {
             width: 200px;
         }
     }
+
     .achive {
         .count-block {
             h3 {
@@ -300,11 +405,13 @@
             }
         }
     }
+
     .br-news {
         .news-info {
             .detail {
                 h3 {
                     line-height: 16px;
+
                     a {
                         font-size: 14px;
                         line-height: 17px;
@@ -313,20 +420,24 @@
             }
         }
     }
+
     .br-contact {
         .m-b-minus-30px {
             margin-bottom: 0;
         }
     }
+
     .br-contact {
-        .br-box{
+        .br-box {
             &:before {
                 top: -75%;
                 right: -8%;
             }
+
             &:after {
                 right: -16%;
             }
+
             &:hover {
                 &:after {
                     right: -15%;
@@ -335,15 +446,18 @@
         }
     }
 }
+
 @media only screen and (max-width: 767px) {
     .section-title {
         h2 {
             padding: 0 0 10px 0;
         }
+
         .ligh-title {
             display: none;
         }
     }
+
     .br-hero {
         .hero-content {
             .br-hero-detail {
@@ -352,9 +466,11 @@
                     font-size: 30px;
                 }
             }
+
             .br-hero-name {
                 h3 {
                     font-size: 24px;
+
                     &:after {
                         height: 4px;
                     }
@@ -362,24 +478,29 @@
             }
         }
     }
+
     .br-about {
-        .br-box{
+        .br-box {
             &:before {
                 right: -13%;
             }
+
             &:after {
                 right: -22%;
             }
-            &:hover{
+
+            &:hover {
                 &:after {
                     right: -20%;
                 }
             }
+
             h3 {
                 font-size: 19px;
             }
         }
     }
+
     .portfolio-tabs {
         ul {
             li {
@@ -387,43 +508,52 @@
             }
         }
     }
+
     .achive {
-        .count-block{
+        .count-block {
             &:before {
                 right: -6%;
             }
         }
     }
+
     .br-contact {
-        .br-box{
+        .br-box {
             &:after {
                 right: -20%;
             }
-            &:hover{
+
+            &:hover {
                 &:after {
                     right: -18%;
                 }
             }
         }
+
         form {
             .form-group {
-                input, textarea {
+
+                input,
+                textarea {
                     padding: 10px 15px;
                 }
             }
         }
     }
+
     footer {
         .br-footer-detail {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             .br-copy {
                 margin-bottom: 15px;
             }
         }
     }
 }
+
 @media only screen and (max-width: 575px) {
     .section-title {
         h2 {
@@ -431,15 +561,18 @@
             font-size: 28px;
         }
     }
+
     header {
         nav {
             a {
                 top: 15px;
                 right: 15px;
+
                 .svg_img {
                     width: 25px;
                     height: 25px;
                 }
+
                 &:hover {
                     .svg_img {
                         width: 30px;
@@ -449,6 +582,7 @@
             }
         }
     }
+
     .br-hero {
         .hero-content {
             .br-hero-detail {
@@ -456,91 +590,110 @@
                     font-size: 28px;
                 }
             }
+
             .br-hero-name {
                 h3 {
                     font-size: 23px;
                 }
             }
+
             .art {
                 right: 50px;
             }
         }
     }
+
     .br-about-detail {
         h4 {
             margin-bottom: 15px;
         }
     }
+
     .br-project-box {
         .portfolio-img {
             width: 150px;
         }
     }
 }
+
 @media only screen and (max-width: 480px) {
     .br-project-box {
         .portfolio-img {
             width: 120px;
         }
     }
+
     .br-hero {
         .hero-content {
             .br-hero-img {
-                margin: 50px 15px 30px 15px;
+                // margin: 50px 15px 30px 15px;
+                margin: 25px 15px 30px 15px;
             }
         }
     }
 }
+
 @media only screen and (max-width: 420px) {
     .br-project-box {
         .br-info {
             flex-direction: column;
         }
+
         .portfolio-img {
             width: 100%;
             height: 200px;
+
             a {
                 background-size: 100%;
             }
         }
+
         .br-detail {
             padding: 30px 0 0 0;
         }
     }
+
     .br-about {
-        .br-box{
+        .br-box {
             &:after {
                 right: -28%;
             }
+
             &:hover {
                 &:after {
                     right: -26%;
                 }
             }
+
             h3 {
                 font-size: 18px;
             }
         }
     }
+
     .br-contact {
-        .br-box{
+        .br-box {
             &:after {
                 right: -28%;
             }
+
             &:before {
                 top: -47%;
             }
+
             &:hover {
                 &:after {
                     top: -20%;
                     right: -30%;
                 }
+
                 &:before {
                     top: -53%;
                 }
             }
         }
     }
+
     .br-hero {
         .hero-content {
             .br-hero-detail {
@@ -549,25 +702,31 @@
                 }
             }
         }
+
         .br-diamond-1 {
             top: 27%;
         }
     }
+
     .section-title {
         h2 {
             font-size: 26px;
         }
     }
+
     .br-about-detail {
         h4 {
             font-size: 18px;
         }
     }
-    .education, .experiense {
+
+    .education,
+    .experiense {
         h4 {
             font-size: 19px;
         }
     }
+
     .timeline-content {
         .timeline-title {
             .sub {
@@ -577,6 +736,7 @@
             }
         }
     }
+
     .achive {
         .count-block {
             h3 {
@@ -584,6 +744,7 @@
             }
         }
     }
+
     .br-contact {
         .br-box {
             .info {
@@ -593,6 +754,7 @@
             }
         }
     }
+
     .portfolio-tabs {
         ul {
             li {
@@ -600,29 +762,35 @@
             }
         }
     }
+
     .br-contact {
         .br-box {
             .detail {
                 width: 100%;
                 flex-direction: column;
+
                 .icon {
                     margin-bottom: 15px;
                 }
+
                 .info {
                     text-align: center;
                 }
             }
         }
     }
+
     footer {
         .br-footer-detail {
-                height: 130px;
+            height: 130px;
+
             .br-copy {
                 margin-bottom: 14px;
                 text-align: center;
             }
         }
     }
+
     .br-project-box {
         p {
             a {
@@ -631,6 +799,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 360px) {
     header {
         nav {
@@ -641,6 +810,7 @@
             }
         }
     }
+
     .br-hero {
         .hero-content {
             .br-hero-detail {
@@ -648,6 +818,7 @@
                     font-size: 24px;
                 }
             }
+
             .br-hero-name {
                 h3 {
                     font-size: 20px;
@@ -655,20 +826,24 @@
                 }
             }
         }
+
         .br-diamond-5 {
             top: -2%;
         }
     }
+
     .section-title {
         h2 {
             font-size: 24px;
         }
     }
+
     .br-about-detail {
         h4 {
             font-size: 17px;
         }
     }
+
     .br-about {
         .br-box {
             h3 {
@@ -676,46 +851,56 @@
             }
         }
     }
+
     .br-about-info {
         ul {
             li {
                 font-size: 13px;
+
                 .title {
                     min-width: 90px;
                 }
             }
         }
     }
-    .education, .experiense {
+
+    .education,
+    .experiense {
         h4 {
             font-size: 18px;
         }
     }
+
     .timeline-content {
         .timeline-title {
             font-size: 14px;
         }
     }
+
     .br-project-box {
         h3 {
             font-size: 16px;
         }
     }
+
     .achive {
         .count-block {
             h3 {
                 font-size: 32px;
             }
+
             p {
                 font-size: 16px;
-            }            
+            }
         }
     }
+
     .timeline-info {
         span {
             font-size: 11px;
         }
     }
+
     .box-back {
         .content-wrap {
             h3 {
@@ -724,6 +909,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 320px) {
     .section-title {
         h2 {
@@ -731,6 +917,7 @@
             line-height: 24px;
         }
     }
+
     .br-hero {
         .hero-content {
             .br-hero-detail {
@@ -738,6 +925,7 @@
                     font-size: 23px;
                 }
             }
+
             .br-hero-name {
                 h3 {
                     font-size: 18px;
@@ -745,11 +933,13 @@
             }
         }
     }
+
     .br-about {
-        .br-box{
+        .br-box {
             &:after {
                 right: -34%;
             }
+
             &:hover {
                 &:after {
                     right: -34%;
@@ -757,6 +947,7 @@
             }
         }
     }
+
     .portfolio-tabs {
         ul {
             li {
@@ -764,6 +955,7 @@
             }
         }
     }
+
     .achive {
         .count-block {
             h3 {
