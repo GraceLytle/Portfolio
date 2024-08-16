@@ -145,16 +145,24 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="br-about-detail">
-                        <h4>A Jazz Musician's Guide to Making Hackers Sing the Blues</h4>
-                        <p class="br-text">The catalyst for my interest in computer science came from my desire to help.
-                            I
-                            built a website for my husband to use for his private trumpet lesson studio. I knew his
-                            website
-                            would be more impactful if it was custom and unique, so I chose not to use a website
-                            builder; instead, I learned HTML, CSS, and JavaScript</p>
-                        <p class="br-text">My goals in venturing into this field are to contribute to the development of
-                            robust,
-                            reliable, and trustworthy cybersecurity systems that protect society.</p>
+                        <!-- <h4>A Jazz Musician's Guide to Making Hackers Sing the Blues</h4> -->
+                        <p class="br-text">Music has always been a significant part of my life.
+                            As a trumpeter in jazz, orchestra, and marching bands,
+                            the camaraderie and creativity I experienced fueled my passion for learning.
+                            </br>
+                            The catalyst for my interest in computer science came from my desire to help.
+                            I wanted to build an impactful and unique website for my husband to use for his trumpet
+                            lesson studio.
+                            To accomplish this, I chose not to use a website builder; instead, I learned HTML, CSS, and
+                            JavaScript.
+                            Since returning to pursue a Computer Science degree, my interest in web development has
+                            grown, along with
+                            my understanding of the importance of cybersecurity.</p>
+                        <p class="br-text">In Fall of 2023, a cryptography course solidified my passion for cybersecurity.
+                            The class showed me how crucial cybersecurity is not only for web development but also for all digital platforms. 
+                            The challenge of securing and testing cryptographic systems showed me the
+                            responsibility and creativity in the field of Cryptography.
+                           </p>
                         <div class="br-about-info">
                             <ul class="m-r-30">
                                 <li><span class="title">Languages<b>:</b></span>Java (Advanced), Python (Advanced), C#
@@ -262,7 +270,7 @@
     <!-- End Experience & Education Section -->
 
     <!-- Start Portfolio Section -->
-    <section id="portfolio" class="br-portfolio padding-tb-80">
+    <section id="portfolio" class="br-portfolio padding-tb-80" id="portfolio-section">
         <div class="container">
             <div class="section-title">
                 <h2>My <span>Projects</span></h2>
@@ -291,9 +299,9 @@
                                             <div class="br-project-box">
                                                 <h3>Bauer Music Studio</h3>
                                                 <div class="links">
-                                                    <a href="">Web Development</a> |
-                                                    <a href="">Cybersecurity</a> |
-                                                    <a href="">Professional</a>
+                                                    <a href="#portfolio-section" data-filter=".webDevelopment">Web Development</a> |
+                                                    <a href="#portfolio-section" data-filter=".cybersecurity">Cybersecurity</a> |
+                                                    <a href="#portfolio-section" data-filter=".professional">Professional</a>
                                                 </div>
                                                 <p>My first project, which was the catalyst for me to return to school.
                                                     Custom Azure Static application using Hugo Static site generator
@@ -305,7 +313,7 @@
                                                             data-animated="assets/img/portfolio/BauerMusicStudio1200x900.gif"
                                                             data-static="assets/img/portfolio/BauerMusicStudio.png"
                                                             href="assets/img/portfolio/BauerMusicStudio1885x950.gif"
-                                                            style="background-image: url(assets/img/portfolio/BeMyValentine2.png)">
+                                                            style="background-image: url(assets/img/portfolio/BauerMusicStudio.png)">
                                                             <span class="overlay"><span
                                                                     class="plus-sign">+</span></span>
                                                         </a>
@@ -314,8 +322,11 @@
                                                         <ul>
                                                             <li>Date : June 2021 - Current</li>
                                                             <li>Tech : HTML, CSS, JavaScript, Go </li>
-                                                            <li>URL : <a href="https://bauermusicstudio.com">BauerMusicStudio.com</a></li>
-                                                            <li>Source Code : <a href="https://github.com/BauerMusicStudio">github.com/BauerMusicStudio</a>
+                                                            <li>URL : <a
+                                                                    href="https://bauermusicstudio.com">BauerMusicStudio.com</a>
+                                                            </li>
+                                                            <li>Source Code : <a
+                                                                    href="https://github.com/BauerMusicStudio">github.com/BauerMusicStudio</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -326,20 +337,20 @@
                                             <div class="br-project-box">
                                                 <h3>Be My Valentine</h3>
                                                 <div class="links">
-                                                    <a href="">Web Development</a> |
-                                                    <a href="">Professional</a>
+                                                    <a href="#portfolio-section" data-filter=".webDevelopment">Web Development</a> |
+                                                    <a href="#portfolio-section" data-filter=".professional">Professional</a>
                                                 </div>
                                                 <p>Custom React Site Hosted as an Azure Static application.
                                                     Uses components for UI and state management and event handling for
                                                     user interactions.
                                                 </p>
                                                 <div class="br-info">
-                                                    <div class="portfolio-img">
+                                                    <div class="portfolio-img" style="background-color: #ffd3d2;">
                                                         <a class="" data-fancybox="gallery"
                                                             data-animated="assets/img/portfolio/BeMyValentine1200x900.gif"
-                                                            data-static="assets/img/portfolio/BeMyValentine.png"
+                                                            data-static="assets/img/portfolio/Valentine.png"
                                                             href="assets/img/portfolio/BeMyValentine1885x950.gif"
-                                                            style="background-image: url(assets/img/portfolio/Goose.png)">
+                                                            style="background-image: url(assets/img/portfolio/Valentine.png)">
                                                             <span class="overlay"><span
                                                                     class="plus-sign">+</span></span>
                                                         </a>
@@ -348,8 +359,11 @@
                                                         <ul>
                                                             <li>Date : February 2024</li>
                                                             <li>Concepts : React, HTML, CSS</li>
-                                                            <li>URL : <a href="https://bemyvalentine.tenacious3.com/">BeMyValentine.Tenacious3.com</a></li>
-                                                            <li>Source Code : <a href="https://github.com/GraceLytle/BeMyValentine">github.com/GraceLytle/BeMyValentine</a>
+                                                            <li>URL : <a
+                                                                    href="https://bemyvalentine.tenacious3.com/">BeMyValentine.Tenacious3.com</a>
+                                                            </li>
+                                                            <li>Source Code : <a
+                                                                    href="https://github.com/GraceLytle/BeMyValentine">github.com/BeMyValentine</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -361,9 +375,9 @@
                                             <div class="br-project-box">
                                                 <h3>Web Development Final Project</h3>
                                                 <div class="links">
-                                                    <a href="">Cybersecurity</a> |
-                                                    <a href="">Web Development</a> |
-                                                    <a href="">Educational</a>
+                                                    <a href="#portfolio-section" data-filter=".cybersecurity">Cybersecurity</a> |
+                                                    <a href="#portfolio-section" data-filter=".webDevelopment">Web Development</a> |
+                                                    <a href="#portfolio-section" data-filter=".educational">Educational</a>
                                                 </div>
                                                 <p> Static site using Pug templating for Node.js. This app employs an
                                                     SQLite database for
@@ -374,12 +388,12 @@
                                                     statements, and user input sanitization.
                                                 </p>
                                                 <div class="br-info">
-                                                    <div class="portfolio-img">
+                                                    <div class="portfolio-img" style="background-color: #000;">
                                                         <a class="" data-fancybox="gallery"
                                                             data-animated="assets/img/portfolio/WebDevFinal1200x900.gif"
                                                             data-static="assets/img/portfolio/WebDevFinal.png"
                                                             href="assets/img/portfolio/WebDevFinal1885x950.gif"
-                                                            style="background-image: url(assets/img/portfolio/BeMyValentine2.png)">
+                                                            style="background-image: url(assets/img/portfolio/WebDevFinal.png)">
                                                             <span class="overlay"><span
                                                                     class="plus-sign">+</span></span>
                                                         </a>
@@ -414,9 +428,9 @@
                                                     <div class="portfolio-img">
                                                         <a class="" data-fancybox="gallery"
                                                             data-animated="assets/img/portfolio/Cryptography1885x950.gif"
-                                                            data-static="assets/img/portfolio/Cryptography.png"
+                                                            data-static="assets/img/portfolio/Cryptography1.png"
                                                             href="assets/img/portfolio/Cryptography1885x950.gif"
-                                                            style="background-image: url(assets/img/portfolio/BeMyValentine2.png)">
+                                                            style="background-image: url(assets/img/portfolio/Cryptography1.png)">
                                                             <span class="overlay"><span
                                                                     class="plus-sign">+</span></span>
                                                         </a>
@@ -444,9 +458,9 @@
                                                     <div class="portfolio-img">
                                                         <a class="" data-fancybox="gallery"
                                                             data-animated="assets/img/portfolio/JMB1885x950.gif"
-                                                            data-static="assets/img/portfolio/JMB.png"
+                                                            data-static="assets/img/portfolio/JMB00.png"
                                                             href="assets/img/portfolio/JMB1885x950.gif"
-                                                            style="background-image: url(assets/img/portfolio/Goose.png)">
+                                                            style="background-image: url(assets/img/portfolio/jmb00.png)">
                                                             <span class="overlay"><span
                                                                     class="plus-sign">+</span></span>
                                                         </a>
@@ -455,7 +469,8 @@
                                                         <ul>
                                                             <li>Date : July 2022</li>
                                                             <li>Tech : HTML, CSS</li>
-                                                            <li>URL : <a href="https://www.jmb-ins.com/">JMB-ins.com</a></li>
+                                                            <li>URL : <a href="https://www.jmb-ins.com/">JMB-ins.com</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -474,7 +489,7 @@
                                                     <div class="portfolio-img">
                                                         <a class="" data-fancybox="gallery"
                                                             data-animated="assets/img/portfolio/Goose1885x950.gif"
-                                                            data-static="assets/img/portfolio/Goose.png"
+                                                            data-static="assets/img/portfolio/Goose00.png"
                                                             href="assets/img/portfolio/Goose1885x950.gif"
                                                             style="background-image: url(assets/img/portfolio/Goose00.png)">
                                                             <span class="overlay"><span
@@ -485,7 +500,9 @@
                                                         <ul>
                                                             <li>Date : March 2024</li>
                                                             <li>Tech : HTML, CSS</li>
-                                                            <li>URL : <a href="https://www.goosecreekroasters.com/">goosecreekroasters.com</a></li>
+                                                            <li>URL : <a
+                                                                    href="https://www.goosecreekroasters.com/">goosecreekroasters.com</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -504,7 +521,7 @@
 
     <!-- Start Contact Section -->
     <section id="contact" class="br-contact padding-tb-80 sec-bg">
-        
+
         <div class="container d-block">
             <div class="section-title">
                 <div class="art"></div>
@@ -523,7 +540,7 @@
                                         <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; Grace@Tenacious3.com
                                     </p>
                                     <p>
-                                        <i class="fa fa-globe" aria-hidden="true"></i> &nbsp; 
+                                        <i class="fa fa-globe" aria-hidden="true"></i> &nbsp;
                                         <a href="https://github.com/GraceLytle">github.com/GraceLytle</a>
                                     </p>
                                 </div>
@@ -554,14 +571,14 @@
         <div class="container">
             <div class="br-footer-detail">
                 <div class="br-copy">
-                    Copyright © <a class="site-name" href="index.html">Brog</a> all rights reserved. Powered by Brog.
+                    <p>&copy; Grace Lytle <span id="year"></span></p>
                 </div>
                 <div class="br-social">
                     <ul>
                         <li><a href="https://github.com/GraceLytle" target="_blank"><i class="fa fa-github"
                                     aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/grace-lytle-cybersecurity/" target="_blank"><i class="fa fa-linkedin"
-                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/grace-lytle-cybersecurity/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -580,6 +597,9 @@
 
     <!-- Scroll button animation for mouse hover Js -->
     <script src="assets/js/vendor/tweenmax.min.js"></script>
+
+    <!-- Get year for the copyright in the footer -->
+    <script> document.getElementById('year').textContent = new Date().getFullYear();</script>
 
     <!-- Site Main Js -->
     <script src="assets/js/script.js"></script>

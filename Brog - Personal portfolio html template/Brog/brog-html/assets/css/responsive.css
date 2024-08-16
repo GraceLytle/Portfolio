@@ -29,6 +29,11 @@
     padding: 30px 0 0 0;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .br-project-box .br-info .portfolio-img {
+    width: 75%;
+  }
+}
 @media only screen and (max-width: 991px) {
   .br-hero .hero-content .br-hero-img {
     order: 0;
@@ -41,9 +46,6 @@
   }
   .br-hero .hero-content .br-hero-detail {
     order: 1;
-  }
-  .br-hero .hero-content .br-text-2 {
-    display: none;
   }
   .br-about-detail {
     margin-top: 25px;
