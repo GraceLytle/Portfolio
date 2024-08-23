@@ -3,6 +3,6 @@
       "rewrite": "/index.html"
     },
     "skip_files": [
-      "assets/img/portfolio/*.gif"
+      "GraceLytlePortfolio/assets/img/portfolio/*.gif"
     ]
   }
